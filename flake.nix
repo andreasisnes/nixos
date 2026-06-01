@@ -15,8 +15,8 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
+        ./lib/lib.nix
         ./hosts/server
-        home-manager.nixosModules.home-manager
       ];
     };
   };

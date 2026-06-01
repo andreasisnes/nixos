@@ -1,8 +1,9 @@
 { pkgs, ... }: {
   
   host = {
-    # Localshostname = "isnes";
-    username = "andreas";
+    hostname     = "andreas-server";
+    username     = "andreas";
+    stateVersion = "25.11";
 
     gitUsername = "Andreas Isnes";
     gitEmail = "andreas.isnes@gmail.com";
@@ -46,5 +47,4 @@
     ../../modules/dotnet.nix
   ];
 
-  system.stateVersion = "25.11"; # Did you read the comment?
 }
