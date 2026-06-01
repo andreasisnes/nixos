@@ -26,7 +26,7 @@
     # System
     ../../modules/nix.nix
     ../../modules/boot.nix
-    ../../modules/networking.nix
+    ../../modules/network.nix
     ../../modules/time.nix
     ../../modules/zsh.nix
     ../../modules/git.nix
