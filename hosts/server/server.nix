@@ -26,6 +26,9 @@
     # Hardware
     ../../modules/bluetooth.nix
 
+    # Users
+    ./../../modules/users/server-default.nix
+
     # System
     ../../modules/nix.nix
     ../../modules/zsh.nix
@@ -33,11 +36,14 @@
     ../../modules/ssh.nix
     ../../modules/time.nix
     ../../modules/home-manager.nix
+    ../../modules/networking.nix
 
-    # Programming Languages
+    # Programming
     ../../modules/direnv.nix
     ../../modules/docker.nix
     ../../modules/dotnet.nix
+
+    # Networking
   ];
 
   environment.systemPackages = with pkgs; [

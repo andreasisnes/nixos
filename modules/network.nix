@@ -1,0 +1,37 @@
+{
+  host,
+  options,
+  lib,
+  ...
+}:
+{
+  users.users.${host.username}.extraGroups = [
+    "networkmanager"
+  ];
+
+  networking = {
+    hostName = "${host.hostname}";
+    # avoid checking if IP is already taken to boot a few seconds faster
+    dhcpcd.extraConfig = "noarp";
+    # no need to wait interfaces to have an IP to continue booting
+    dhcpcd.wait = "background";
+    useDHCP = lib.mkDefault true;
+
+    networkmanager = {
+      wifi.powersave = false;
+      enable = true;
+      insertNameservers = [
+        "1.1.1.1" # Cloudflare
+        "8.8.8.8" # Google
+        "9.9.9.9" # Quad9
+      ];
+    };
+
+    nameservers = [
+      "1.1.1.1" # Cloudflare
+      "8.8.8.8" # Google
+      "9.9.9.9" # Quad9
+    ];
+    timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
+  };
+}
