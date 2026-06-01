@@ -1,6 +1,12 @@
 { host, inputs, ... }:
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
+
+  users.users.${host.username} = {
+    isNormalUser = true;
+    home = "/home/${host.username}";
+  };
+
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
