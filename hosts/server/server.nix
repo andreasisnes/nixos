@@ -2,7 +2,7 @@
   host = {
     hostname     = "andreas-server";
     username     = "andreas";
-    flakePath = "/home/andreas/config";
+    flakePath = "/home/andreas/Projects/github.com/andreasisnes/nixos";
     stateVersion = "25.11";
 
     gitUsername = "Andreas Isnes";
