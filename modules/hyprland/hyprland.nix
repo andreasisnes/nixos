@@ -44,7 +44,6 @@
     wayland.windowManager.hyprland = {
       enable = true;
       package = pkgs.hyprland;
-      withUWSM = true;
       systemd.enable = false;
       xwayland = {
         enable = true;
