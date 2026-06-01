@@ -40,16 +40,12 @@
     wayland.windowManager.hyprland = {
       enable = true;
       package = pkgs.hyprland;
-      systemd = {
-        enable = true;
-        enableXdgAutostart = true;
-        variables = [ "--all" ];
-      };
-
+      withUWSM = true;
+      systemd.enable = false;
       xwayland = {
         enable = true;
-        # hidpi = true;
       };
+
       # enableNvidiaPatches = false;
 
       settings = {

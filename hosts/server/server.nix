@@ -40,6 +40,7 @@
     ../../modules/git.nix
     ../../modules/ssh.nix
     ../../modules/home-manager.nix
+    ../../modules/ghostty.nix
 
     # Programming
     ../../modules/direnv.nix
