@@ -39,6 +39,7 @@
     ../../modules/zsh.nix
     ../../modules/git.nix
     ../../modules/ssh.nix
+    ../../modules/fonts.nix
     ../../modules/home-manager.nix
     ../../modules/ghostty.nix
 
