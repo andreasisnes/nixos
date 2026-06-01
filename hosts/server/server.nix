@@ -47,6 +47,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    "go"
+    go
   ];
 }
