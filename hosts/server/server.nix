@@ -38,7 +38,8 @@
     ../../modules/docker.nix
     ../../modules/dotnet.nix
 
-    # Networking
+    # Window manager
+    ../../modules/hyprland/hyprland.nix
   ];
 
   environment.systemPackages = with pkgs; [
