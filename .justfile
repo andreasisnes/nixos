@@ -1,4 +1,4 @@
-host := `hostname | sed 's/andreas-//'`
+host := "server"
 
 default:
     @just --list
