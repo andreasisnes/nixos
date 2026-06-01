@@ -12,7 +12,7 @@
     # Time and Locale settings
     timeZone = "Europe/Oslo";
     console.keyMap = "no";
-    i18n.defaultLocale = "en_US.UTF-8";
+    defaultLocale = "en_US.UTF-8";
     i18n.extraLocaleSettings = {
       LC_ADDRESS = "nb_NO.UTF-8";
       LC_IDENTIFICATION = "nb_NO.UTF-8";
