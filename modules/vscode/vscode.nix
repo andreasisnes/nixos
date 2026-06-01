@@ -2,17 +2,16 @@
   pkgs,
   inputs,
   host,
-  mkSymlinks,
   ...
 }:
 {
   nixpkgs.overlays = [
     inputs.nix-vscode-extensions.overlays.default
   ];
-  system.activationScripts = mkSymlinks "vscode" {
-    "/home/${host.username}/.config/Code/User/keybindings.json" = "${host.flakePath}/modules/vscode/keybindings.json";
-    "/home/${host.username}/.config/Code/User/settings.json" = "${host.flakePath}/modules/vscode/settings.json";
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/${host.username}/.config/Code/User/settings.json    - ${host.username} users - ${host.flakePath}/modules/vscode/settings.json"
+    "L+ /home/${host.username}/.config/Code/User/keybindings.json - ${host.username} users - ${host.flakePath}/modules/vscode/keybindings.json"
+  ];
   home = {
     home.packages = with pkgs; [
       shellcheck # Shell script analysis tool
