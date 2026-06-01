@@ -22,7 +22,7 @@
       LC_TELEPHONE = "nb_NO.UTF-8";
       LC_TIME = "nb_NO.UTF-8";
     };
-  }
+  };
 
   nixpkgs.config.allowUnfree = true;
 
