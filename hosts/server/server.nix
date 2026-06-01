@@ -44,6 +44,7 @@
     ../../modules/ghostty.nix
 
     # Programming
+    ../../modules/vscode/vscode.nix
     ../../modules/direnv.nix
     ../../modules/docker.nix
     ../../modules/dotnet.nix
