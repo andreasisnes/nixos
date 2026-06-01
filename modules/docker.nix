@@ -1,7 +1,13 @@
 { pkgs, host, ... }:
 {
-  virtualisation.docker.enable = true;
-  
+  virtualisation.docker = {
+    enable = true; 
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   users.users.${host.username}.extraGroups = [ "docker" ];
 
   environment.systemPackages = with pkgs; [

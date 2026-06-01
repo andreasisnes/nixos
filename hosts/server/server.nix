@@ -1,9 +1,4 @@
 { pkgs, ... }: {
-  
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   host = {
     hostname     = "andreas-server";
     username     = "andreas";
@@ -15,7 +10,6 @@
 
     # Time and Locale settings
     timeZone = "Europe/Oslo";
-    console.keyMap = "no";
     defaultLocale = "en_US.UTF-8";
     extraLocaleSettings = "nb_NO.UTF-8";
   };
@@ -24,19 +18,20 @@
     ./hardware-configuration.nix
 
     # Hardware
-    ../../modules/bluetooth.nix
+    # ../../modules/bluetooth.nix
 
     # Users
     ./../../modules/users/server-default.nix
 
     # System
     ../../modules/nix.nix
+    ../../modules/boot.nix
+    ../../modules/networking.nix
+    ../../modules/time.nix
     ../../modules/zsh.nix
     ../../modules/git.nix
     ../../modules/ssh.nix
-    ../../modules/time.nix
     ../../modules/home-manager.nix
-    ../../modules/networking.nix
 
     # Programming
     ../../modules/direnv.nix
@@ -49,4 +44,7 @@
   environment.systemPackages = with pkgs; [
     go
   ];
+
+  # Configure console keymap
+  console.keyMap = "no";
 }
