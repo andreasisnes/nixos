@@ -38,7 +38,7 @@
     ../../modules/zsh.nix
     ../../modules/git.nix
     ../../modules/ssh.nix
-    ../../miodules/time.nix
+    ../../modules/time.nix
     ../../modules/home-manager.nix
 
     # Programming Languages
