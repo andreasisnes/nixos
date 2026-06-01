@@ -3,6 +3,7 @@
   host = {
     hostname     = "andreas-server";
     username     = "andreas";
+    flakePath = "/home/andreas/config";
     stateVersion = "25.11";
 
     gitUsername = "Andreas Isnes";
