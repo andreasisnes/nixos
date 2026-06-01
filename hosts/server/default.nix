@@ -46,7 +46,7 @@
     ../../modules/direnv.nix
     ../../modules/docker.nix
     ../../modules/dotnet.nix
-  ]
+  ];
 
   system.stateVersion = "25.11"; # Did you read the comment?
 }
