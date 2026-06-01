@@ -51,6 +51,9 @@
 
     # Window manager
     ../../modules/hyprland/hyprland.nix
+
+    # Apps
+    ../../modules/brave.nix
   ];
 
   environment.systemPackages = with pkgs; [
