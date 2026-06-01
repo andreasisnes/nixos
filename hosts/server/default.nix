@@ -28,9 +28,7 @@
 
 
   imports = [
-    ./hardware.nix
-
-    # Users
+    ./hardware-configuration.nix
 
     # Hardware
     ../../modules/bluetooth.nix
