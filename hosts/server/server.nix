@@ -13,6 +13,7 @@
     keyboardLightID = "asus::kbd_backlight"; # From brightnessctl -l
     keyboardScreenOFFLightID = "asus::camera"; # From brightnessctl -l shines when screen and keyboard are off
     languageLightID = "platform::micmute"; # Same used to indicate not en lang
+    keyboardLayout = "no";
 
     # Time and Locale settings
     timeZone = "Europe/Oslo";
