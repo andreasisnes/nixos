@@ -46,4 +46,7 @@
     ../../modules/dotnet.nix
   ];
 
+  environment.systemPackages = with pkgs; [
+    "go"
+  ];
 }
