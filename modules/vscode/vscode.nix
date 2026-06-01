@@ -9,8 +9,9 @@
     inputs.nix-vscode-extensions.overlays.default
   ];
   systemd.tmpfiles.rules = [
-    "L+ /home/${host.username}/.config/Code/User/settings.json    - ${host.username} users - ${host.flakePath}/modules/vscode/settings.json"
-    "L+ /home/${host.username}/.config/Code/User/keybindings.json - ${host.username} users - ${host.flakePath}/modules/vscode/keybindings.json"
+    "d  /home/${host.username}/.config/Code/User                  0755 ${host.username} users - -"
+    "L+ /home/${host.username}/.config/Code/User/settings.json    -    ${host.username} users - ${host.flakePath}/modules/vscode/settings.json"
+    "L+ /home/${host.username}/.config/Code/User/keybindings.json -    ${host.username} users - ${host.flakePath}/modules/vscode/keybindings.json"
   ];
   home = {
     home.packages = with pkgs; [
