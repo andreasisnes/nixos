@@ -21,7 +21,7 @@
     # ../../modules/bluetooth.nix
 
     # Users
-    ./../../modules/users/server-default.nix
+    ./../../users/server-default.nix
 
     # System
     ../../modules/nix.nix
