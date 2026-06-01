@@ -5,7 +5,7 @@
     username = "andreas";
 
     gitUsername = "Andreas Isnes";
-    gitEmail = "andreas.isnes@gmail.com"
+    gitEmail = "andreas.isnes@gmail.com";
 
     # Time and Locale settings
     timeZone = "Europe/Oslo";
