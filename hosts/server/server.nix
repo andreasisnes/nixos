@@ -35,6 +35,7 @@
     ../../modules/boot.nix
     ../../modules/network.nix
     ../../modules/time.nix
+    ../../modules/login-manager.nix
     ../../modules/zsh.nix
     ../../modules/git.nix
     ../../modules/ssh.nix

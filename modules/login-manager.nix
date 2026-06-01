@@ -1,0 +1,18 @@
+{ config, pkgs, host,  ... }:
+{
+  environment.systemPackages = with pkgs; [
+    tuigreet  # TUI login manager
+  ];
+  services = {
+    greetd = {
+      enable = true;
+      useTextGreeter = true;
+      settings = {
+        default_session = {
+          user = host.username;
+          command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions ${config.services.displayManager.sessionData.desktops}/share/xsessions:${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session"; # start Hyprland with a TUI login manager (needed hyprland enabled systemwide!) 
+        };
+      };
+    };
+  };
+}
