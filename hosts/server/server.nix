@@ -25,6 +25,12 @@
     };
   };
 
+  home = {
+    home.username     = "andreas";
+    home.homeDirectory = "/home/andreas";
+    home.stateVersion = "25.11";
+  };
+
   imports = [
     ./hardware-configuration.nix
 

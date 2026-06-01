@@ -15,7 +15,6 @@ in
     };
     home = lib.mkOption {
       type = lib.types.deferredModule;
-      default = {};
       description = "home-manager.users.<username> alias";
     };
   };
