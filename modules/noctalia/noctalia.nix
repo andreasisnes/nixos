@@ -15,7 +15,10 @@
   environment.systemPackages = [
     inputs.noctaliav5.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
-  home = {
+  system.activationScripts = mkSymlinks "noctalia" {
+     "/home/${host.username}/.config/noctalia/settings.json" = "${host.flakePath}/modules/noctalia/settings.json";
+  };
+  home-manager.users.${host.username} = {
     imports = [ inputs.noctalia.homeModules.default ];
     programs.noctalia-shell = {
       enable = true;
