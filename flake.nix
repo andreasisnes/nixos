@@ -8,6 +8,10 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
     
+    noctalia.url = "github:noctalia-dev/noctalia-shell";
+    noctaliav5.url = "github:noctalia-dev/noctalia-shell/v5";
+    noctalia.inputs.nixpkgs.follows = "nixpkgs"; 
+    
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
