@@ -51,7 +51,7 @@
 
     # Window manager
     ../../modules/hyprland/hyprland.nix
-    ../../modules/noctalia/noxtalia.nix
+    ../../modules/noctalia/noctalia.nix
     ../../modules/vicinae.nix
     
     # Apps
