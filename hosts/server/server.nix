@@ -51,8 +51,8 @@
 
     # Window manager
     ../../modules/hyprland/hyprland.nix
+    ../../modules/noctalia/noxtalia.nix
     ../../modules/vicinae.nix
-
     # Apps
     ../../modules/brave.nix
   ];
