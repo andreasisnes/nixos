@@ -1,6 +1,9 @@
 { pkgs, ...}:
 
-environment.systemPackages = with pkgs; [
-  spotify
-  discord
-];
+{
+  environment.systemPackages = with pkgs; [
+    spotify
+    discord
+    slack
+  ];
+}

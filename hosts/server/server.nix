@@ -31,6 +31,7 @@
     ../../users/server-default.nix
 
     # System
+    ../../modules/media.nix
     ../../modules/nix.nix
     ../../modules/boot.nix
     ../../modules/network.nix
