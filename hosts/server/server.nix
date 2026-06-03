@@ -57,6 +57,8 @@
     
     # Apps
     ../../modules/brave.nix
+    ../../modules/file-manager.nix
+    ../../modules/desktop/apps.nix
   ];
 
   environment.systemPackages = with pkgs; [
