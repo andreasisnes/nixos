@@ -99,7 +99,6 @@
     "dockercompose": true
   },
   "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Catppuccin Frappé",
   "go.toolsManagement.autoUpdate": true,
   "go.inlayHints.assignVariableTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
@@ -112,5 +111,6 @@
   "chat.viewSessions.enabled": false,
   "workbench.startupEditor": "none",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
-  "terminal.integrated.gpuAcceleration": "off"
+  "terminal.integrated.gpuAcceleration": "off",
+  "workbench.colorTheme": "Catppuccin Mocha"
 }
