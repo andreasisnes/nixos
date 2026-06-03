@@ -279,5 +279,7 @@
   "go.inlayHints.parameterNames": true,
   "go.inlayHints.rangeVariableTypes": true,
   "chat.viewSessions.enabled": false,
-  "workbench.startupEditor": "none"
+"workbench.startupEditor": "none",
+"terminal.integrated.mouseWheelScrollSensitivity": 3,
+"terminal.integrated.gpuAcceleration": "off"
 }

@@ -275,5 +275,13 @@
     {
         "key": "ctrl+shift+t",
         "command": "workbench.view.extension.todo-tree-container"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
     }
 ]
