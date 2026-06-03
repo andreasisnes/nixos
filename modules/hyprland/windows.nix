@@ -50,7 +50,7 @@
       "opacity 0.9, match:tag file-manager*"
       "opacity 0.86, match:tag terminal*"
       "opacity 0.8, match:tag settings*"
-      "opacity 0.86, match:class (code|Code|code-oss)"
+      "opacity 1.0, match:class (code|Code|code-oss)"
       "opacity 1.0 override, match:title Picture-in-Picture"
 
       "pin on, match:title Picture-in-Picture"

@@ -30,7 +30,6 @@
           christian-kohler.path-intellisense
           editorconfig.editorconfig
           jacobdufault.fuzzy-search
-          vscodevim.vim
           alefragnani.project-manager
 
           # Interface Improvements
@@ -65,7 +64,10 @@
           mads-hartmann.bash-ide-vscode
           mkhl.shfmt
 
-          # Testing
+          # Themes
+          catppuccin.catppuccin-vsc
+
+          #Testing
           rangav.vscode-thunder-client
           vitest.explorer
           ms-playwright.playwright
@@ -75,7 +77,6 @@
           # mtxr.sqltools-driver-pg
           dbaeumer.vscode-eslint
           donjayamanne.githistory
-          formulahendry.code-runner
           bierner.color-info
           golang.go
           usernamehw.errorlens
@@ -87,7 +88,6 @@
           ms-vscode.makefile-tools
           ms-vscode.remote-explorer
           inferrinizzard.prettier-sql-vscode
-          kdl-org.kdl
           ms-vsliveshare.vsliveshare
           # codeforge.remix-forge
           amodio.toggle-excluded-files
