@@ -4,13 +4,13 @@
     # General window manager settings
     general = {
       layout = "dwindle"; # Tiling layout engine
-      gaps_in = 0; # Gaps between windows
-      gaps_out = 0; # Gaps between windows and screen edges
-      border_size = 0; # Window border size
+      gaps_in = 5; # Gaps between windows
+      border_size = 3; # Window border size
+      gaps_out = 10; # Gaps between windows and screen edges
       resize_on_border = true; # Allow resizing by dragging border
     };
     decoration = {
-      rounding = 0; # Window corner rounding
+      rounding = 5; # Window corner rounding
       dim_inactive = true;
       dim_strength = 0.16;
       blur = {

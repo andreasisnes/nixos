@@ -73,7 +73,7 @@ in
       "SUPER,R,togglespecialworkspace, term" # Toggle terminal
 
       # --- Window Management ---
-      "SUPER,Q,killactive," # Close active window
+      "SUPER SHIFT,Q,killactive," # Close active window
       "SUPER SHIFT,P,pin," # Pin window
       "SUPER,F,fullscreen," # Toggle fullscreen
       "SUPER SHIFT,F,togglefloating," # Toggle floating
@@ -166,11 +166,8 @@ in
       ",XF86AudioPause, exec, playerctl play-pause"
       ",XF86AudioNext, exec, playerctl next"
       ",XF86AudioPrev, exec, playerctl previous"
-      "SUPER SHIFT,ESCAPE,exit,"
       ",XF86WebCam,exec,toggle_display"
-
-      # Show temporary clock overlay
-      "SUPER,Z,exec, notify-send -a \"Current time \" \"🕒 $(date '+%H:%M')   📅 $(date '+%A, %d %B')\""
+      "SUPER SHIFT,ESCAPE,exit,"
     ];
     #Changing kb layout
     input.kb_options = "caps:escape,grp:win_space_toggle";

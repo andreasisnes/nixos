@@ -45,11 +45,10 @@
       enable = true;
       package = pkgs.hyprland;
       systemd.enable = false;
+      configType = "hyprlang";
       xwayland = {
         enable = true;
       };
-
-      # enableNvidiaPatches = false;
 
       settings = {
         ecosystem = {
