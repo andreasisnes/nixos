@@ -15,9 +15,9 @@
       window-show-tab-bar = "never";
       window-decoration = false;
 
-      font-size = 13;
+      font-size = 10;
       adjust-cell-height = 10;
-      font-family = "BerkeleyMono Nerd Font";
+      font-family = "Mononoki Nerd Font";
       wait-after-command = false;
       mouse-hide-while-typing = true;
       shell-integration = "detect";

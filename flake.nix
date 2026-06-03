@@ -17,6 +17,7 @@
   };
 
   outputs = inputs: {
+    
     nixosConfigurations = inputs.nixpkgs.lib.genAttrs (builtins.attrNames (builtins.readDir ./hosts)) (
       host:
       inputs.nixpkgs.lib.nixosSystem {

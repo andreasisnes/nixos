@@ -45,6 +45,7 @@
 
     # Programming
     ../../modules/vscode/vscode.nix
+    ../../modules/ai-agent.nix
     ../../modules/direnv.nix
     ../../modules/docker.nix
     ../../modules/dotnet.nix
@@ -60,6 +61,7 @@
 
   environment.systemPackages = with pkgs; [
     go
+    fastfetch
   ];
 
   # Configure console keymap
