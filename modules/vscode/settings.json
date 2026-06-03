@@ -79,8 +79,7 @@
     }
   },
   "shfmt.executablePath": "shfmt",
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', 'Fira Code', monospace",
-  "terminal.integrated.fontLigatures.featureSettings": "\"liga\" on",
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
   "update.mode": "none",
   "window.controlsStyle": "hidden",
   "window.customTitleBarVisibility": "never",
@@ -112,5 +111,6 @@
   "workbench.startupEditor": "none",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
   "terminal.integrated.gpuAcceleration": "off",
-  "workbench.colorTheme": "Catppuccin Mocha"
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "window.menuBarVisibility": "hidden"
 }
