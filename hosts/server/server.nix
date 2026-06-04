@@ -31,18 +31,28 @@
     ../../users/server-default.nix
 
     # System
-    ../../modules/media.nix
-    ../../modules/nix.nix
     ../../modules/boot.nix
-    ../../modules/network.nix
-    ../../modules/time.nix
     ../../modules/login-manager.nix
+    ../../modules/home-manager.nix
+    ../../modules/nix.nix
+
+
+    # System Configuration
+    ../../modules/ghostty.nix
     ../../modules/zsh.nix
     ../../modules/git.nix
     ../../modules/ssh.nix
     ../../modules/fonts.nix
-    ../../modules/home-manager.nix
-    ../../modules/ghostty.nix
+    ../../modules/network.nix
+    ../../modules/media.nix
+    ../../modules/time.nix
+    ../../modules/file-manager.nix
+    ../../modules/zoxide.nix
+
+    # GUI configuration
+    ../../modules/xdg.nix
+    ../../modules/qt.nix
+    ../../modules/gtk.nix
 
     # Programming
     ../../modules/vscode/vscode.nix
@@ -51,15 +61,15 @@
     ../../modules/docker.nix
     ../../modules/dotnet.nix
 
-    # Window manager
+    # Windows Managers
     ../../modules/hyprland/hyprland.nix
     ../../modules/noctalia/noctalia.nix
     ../../modules/vicinae.nix
-    
+
     # Apps
     ../../modules/brave.nix
-    ../../modules/file-manager.nix
     ../../modules/desktop/apps.nix
+
   ];
 
   environment.systemPackages = with pkgs; [

@@ -5,8 +5,7 @@
     package = pkgs.ghostty;
     systemd.enable = true;
     settings = {
-      theme = "Dracula+";
-      background = "#161617";
+      theme = "Catppuccin Frappe";
       cursor-style = "bar";
       window-padding-balance = true;
       window-padding-x = 0;

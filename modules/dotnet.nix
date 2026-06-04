@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     (with dotnetCorePackages; combinePackages [
-      # SDKS
+      # SDKs
       sdk_9_0_3xx-bin
       sdk_10_0_2xx-bin
       sdk_11_0_1xx-bin

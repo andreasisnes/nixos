@@ -264,6 +264,9 @@
                         "terminalCommand": ""
                     },
                     "id": "plugin:tailscale"
+                },
+                {
+                    "id": "plugin:model-usage"
                 }
             ]
         }
@@ -762,8 +765,8 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
-        "viewMode": "single",
+        "useWallhaven": false,
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
