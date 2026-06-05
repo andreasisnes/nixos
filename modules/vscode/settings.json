@@ -60,22 +60,6 @@
       "formatting": {
         "command": ["nixfmt"]
       }
-    },
-    "nixd": {
-      "formatting": {
-        "command": ["nixfmt"]
-      },
-      "nixpkgs": {
-        "expr": "import (builtins.getFlake \"/home/alex/config\").inputs.nixpkgs { }"
-      },
-      "options": {
-        "home_manager": {
-          "expr": "(builtins.getFlake \"/home/alex/config\").nixosConfigurations.alex.options.home-manager.users.type.getSubOptions []"
-        },
-        "nixos": {
-          "expr": "(builtins.getFlake \"/home/alex/config\").nixosConfigurations.alex.options"
-        }
-      }
     }
   },
   "shfmt.executablePath": "shfmt",
@@ -111,6 +95,8 @@
   "workbench.startupEditor": "none",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
   "terminal.integrated.gpuAcceleration": "off",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "window.menuBarVisibility": "hidden"
+  "window.menuBarVisibility": "hidden",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato"
 }
+

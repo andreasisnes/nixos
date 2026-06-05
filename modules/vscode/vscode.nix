@@ -66,6 +66,7 @@
 
           # Themes
           catppuccin.catppuccin-vsc
+          catppuccin.catppuccin-vsc-icons
 
           #Testing
           rangav.vscode-thunder-client
