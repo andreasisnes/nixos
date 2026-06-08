@@ -28,11 +28,12 @@
     # ../../modules/bluetooth.nix
 
     # Users
-    ../../users/server-default.nix
+    ../../users/laptop.nix
 
     # System
     ../../modules/boot.nix
     ../../modules/login-manager.nix
+
     ../../modules/home-manager.nix
     ../../modules/nix.nix
 
@@ -70,7 +71,6 @@
     ../../modules/brave.nix
     ../../modules/desktop/apps.nix
 
-    ../../modules/server/services.nix
   ];
 
   environment.systemPackages = with pkgs; [
