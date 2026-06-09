@@ -94,6 +94,12 @@
           amodio.toggle-excluded-files
           # github.copilot
           # github.copilot-chat
+
+          # .NET
+          ms-dotnettools.csharp
+          ms-dotnettools.vscode-dotnet-pack
+          ms-dotnettools.vscode-dotnet-modernize
+          ms-dotnettools.dotnet-maui
         ];
       };
     };

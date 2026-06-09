@@ -73,6 +73,11 @@
   environment.systemPackages = with pkgs; [
     go
     fastfetch
+
+    # AZ CLI
+    (pkgs.azure-cli.withExtensions [
+      pkgs.azure-cli.extensions.aks-preview
+    ])
   ];
 
   # Configure console keymap
