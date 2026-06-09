@@ -32,9 +32,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[cs]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "bashIde.shellcheckPath": "shellcheck",
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -97,6 +94,9 @@
   "terminal.integrated.gpuAcceleration": "off",
   "window.menuBarVisibility": "hidden",
   "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-macchiato"
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "dotnet.formatting.organizeImportsOnFormat": true,
+  "claudeCode.preferredLocation": "panel"
 }
 

@@ -64,6 +64,10 @@
       "ignore_alpha 0.5, match:namespace noctalia-background-.*"
       "ignore_alpha 0, match:namespace vicinae"
     ];
+    xwayland = {
+      force_zero_scaling = true;
+    };
+
     misc = {
       layers_hog_keyboard_focus = true; # Allow layers (like Rofi) to grab focus
       focus_on_activate = true;

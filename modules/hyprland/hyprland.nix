@@ -29,13 +29,41 @@
       ./hypridle.nix
       ./hyprlock.nix
     ];
-    home.packages = with pkgs; [
-      grim
-      slurp
-      wl-clipboard
-      hyprpicker # Color picker
-      ydotool
-    ];
+
+    home = {
+      packages = with pkgs; [
+        grim
+        slurp
+        wl-clipboard
+        hyprpicker # Color picker
+        ydotool
+      ];
+
+      pointerCursor = {
+        package = pkgs.catppuccin-cursors.macchiatoLavender;
+        name = "catppuccin-macchiato-lavender-cursors";
+        size = 24;
+        gtk.enable = true;
+        x11.enable = true;
+      };
+      
+      sessionVariables = {
+        TERMINAL = "ghostty";
+        NIXOS_OZONE_WL = "1";
+        NIXPKGS_ALLOW_UNFREE = "1";
+        XDG_CURRENT_DESKTOP = "Hyprland";
+        XDG_SESSION_DESKTOP = "Hyprland";
+        XDG_SESSION_TYPE = "wayland";
+        GDK_BACKEND = "wayland,x11";
+        CLUTTER_BACKEND = "wayland";
+        QT_QPA_PLATFORM = "wayland;xcb";
+        QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+        QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+        SDL_VIDEODRIVER = "wayland,x11";
+        EDITOR = "nvim";
+        MOZ_ENABLE_WAYLAND = "1";
+      };
+    };
 
     systemd.user.targets.hyprland-session.Unit.Wants = [
       "xdg-desktop-autostart.target"
@@ -56,21 +84,12 @@
           no_update_news = false;
         };
 
-        # Environment variables set for the Hyprland session
-        env = [
-          "NIXOS_OZONE_WL, 1" # Enable Wayland backend for Ozone-based apps (Electron)
-          "NIXPKGS_ALLOW_UNFREE, 1" # Allow unfree packages if needed
-          "XDG_CURRENT_DESKTOP, Hyprland"
-          "XDG_SESSION_DESKTOP, Hyprland"
-          "XDG_SESSION_TYPE, wayland"
-          "GDK_BACKEND, wayland, x11" # Prefer Wayland for GTK apps, fallback to X11
-          "CLUTTER_BACKEND, wayland" # Prefer Wayland for Clutter apps
-          "QT_QPA_PLATFORM=wayland;xcb" # Prefer Wayland for Qt apps, fallback to XCB (X11)
-          "QT_WAYLAND_DISABLE_WINDOWDECORATION, 1" # Use server-side decorations for Qt Wayland apps
-          "QT_AUTO_SCREEN_SCALE_FACTOR, 1" # Auto-scaling for Qt apps
-          "SDL_VIDEODRIVER, wayland,x11" # Prefer Wayland for SDL apps (Corrected from just x11)
-          "EDITOR,nvim" # Default editor
-          "MOZ_ENABLE_WAYLAND, 1" # Force Wayland backend for Firefox
+        cursor = {
+          no_hardware_cursors = false;
+        };
+
+        exec = [
+          "hyprctl setcursor catppuccin-macchiato-lavender-cursors 24"
         ];
 
         # Commands executed once on Hyprland startup
@@ -78,12 +97,10 @@
           "dbus-update-activation-environment --all --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
           "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
           # System tray applets and agents
+
           "noctalia-shell"
           "vicinae server"
           "nm-applet --indicator"
-          # --- Autostart applications ---
-          "firefox"
-          "[workspace 3 silent] ghostty"
         ];
       };
 

@@ -47,6 +47,10 @@
             enabled = true;
             sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
           };
+          kubectl-ctx = {
+            enabled = true;
+            sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+          };
         };
         version = 1;
       };

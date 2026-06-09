@@ -73,6 +73,9 @@
   environment.systemPackages = with pkgs; [
     go
     fastfetch
+    kubectl
+    kubelogin
+    spotify
 
     # AZ CLI
     (pkgs.azure-cli.withExtensions [

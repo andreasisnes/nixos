@@ -11,10 +11,9 @@
     };
     decoration = {
       rounding = 5; # Window corner rounding
-      dim_inactive = true;
-      dim_strength = 0;
+      dim_inactive = false;
       blur = {
-        enabled = true;
+        enabled = false;
         size = 3;
         passes = 3;
         ignore_opacity = false;

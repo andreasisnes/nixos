@@ -100,6 +100,9 @@
           ms-dotnettools.vscode-dotnet-pack
           ms-dotnettools.vscode-dotnet-modernize
           ms-dotnettools.dotnet-maui
+
+          # Claude
+          anthropic.claude-code
         ];
       };
     };

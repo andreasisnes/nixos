@@ -74,6 +74,7 @@
   environment.systemPackages = with pkgs; [
     go
     fastfetch
+    kubectl
   ];
 
   # Configure console keymap
