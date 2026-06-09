@@ -9,9 +9,7 @@
     gitEmail = "andreas.isnes@gmail.com";
 
     # Devices for some features
-    touchpadID = "asue120b:00-04f3:31c0-touchpad"; # From hyprctl devices
-    keyboardLightID = "asus::kbd_backlight"; # From brightnessctl -l
-    keyboardScreenOFFLightID = "asus::camera"; # From brightnessctl -l shines when screen and keyboard are off
+    keyboardLightID = "tpacpi::kbd_backlight"; # From brightnessctl -l
     languageLightID = "platform::micmute"; # Same used to indicate not en lang
     keyboardLayout = "no";
 
@@ -25,7 +23,7 @@
     ./hardware-configuration.nix
 
     # Hardware
-    # ../../modules/bluetooth.nix
+    ../../modules/bluetooth.nix
 
     # Users
     ../../users/laptop.nix
@@ -70,7 +68,6 @@
     # Apps
     ../../modules/brave.nix
     ../../modules/desktop/apps.nix
-
   ];
 
   environment.systemPackages = with pkgs; [

@@ -15,6 +15,7 @@
       plugins = [
         "git"
         "z"
+        "ssh-agent"
       ];
       theme = "dieter";
     };

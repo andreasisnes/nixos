@@ -19,8 +19,8 @@ in
           }
           {
             timeout = 900;
-            on-timeout = "printf 'false' > ${statusFile} && hyprctl dispatch dpms off && brightnessctl -d ${host.keyboardLightID} s 0 && brightnessctl -d ${host.keyboardScreenOFFLightID} s 100";
-            on-resume = "printf 'true' > ${statusFile} && hyprctl dispatch dpms on && brightnessctl -d ${host.keyboardLightID} s 100 && brightnessctl -d ${host.keyboardScreenOFFLightID} s 0";
+            on-timeout = "printf 'false' > ${statusFile} && hyprctl dispatch dpms off && brightnessctl -d ${host.keyboardLightID} s 0";
+            on-resume = "printf 'true' > ${statusFile} && hyprctl dispatch dpms on && brightnessctl -d ${host.keyboardLightID} s 100";
           }
         ];
       };

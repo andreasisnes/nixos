@@ -9,9 +9,7 @@
     gitEmail = "andreas.isnes@gmail.com";
 
     # Devices for some features
-    touchpadID = "asue120b:00-04f3:31c0-touchpad"; # From hyprctl devices
     keyboardLightID = "asus::kbd_backlight"; # From brightnessctl -l
-    keyboardScreenOFFLightID = "asus::camera"; # From brightnessctl -l shines when screen and keyboard are off
     languageLightID = "platform::micmute"; # Same used to indicate not en lang
     keyboardLayout = "no";
 
